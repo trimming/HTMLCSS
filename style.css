@@ -1,0 +1,44 @@
+* {
+    font-family: sans-serif;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1f3f68;
+}
+.top__heading {
+    font-size: 64px;
+    color: #1f3f68;
+}
+.heading__contact-us {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+.heading {
+    font-size: 36px;
+    text-align: center;
+}
+.heading__small {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1f3f68;
+}
+.input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+.button__form {
+    background: #5a98d0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2); 
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
