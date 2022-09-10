@@ -77,9 +77,13 @@
     font-size: 44px;
     text-align: center;
 }
-.heading {
-    font-size: 36px;
+.what-we-do__heading {
+    font-weight: 300;
+    color: #000000;
+    line-height: 46px;
     text-align: center;
+    letter-spacing: 0.05em;
+    font-size: 36px;
 }
 .contact__block {
     display: flex;
