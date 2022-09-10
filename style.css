@@ -3,15 +3,30 @@
     margin: 0;
     padding: 0;
 }
+.top {
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
  .container {
      width: 1140px;
      margin: 0 auto;
  } 
+ .top__content {
+     display: flex;
+     flex-direction: column;
+ }
  .menu {
      display: flex;
      justify-content: space-between;
+     padding-top: 42px;
  }
-
+.top__info {
+    padding-top: 115px;
+    padding-bottom: 190px;
+    flex-grow: 1;
+    background: url(image/illustration.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
 .paragraph {
     font-size: 16px;
     line-height: 26px;
@@ -21,9 +36,34 @@
     font-size: 64px;
     color: #1f3f68;
     width: 510px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    padding-bottom: 32px;
 }
 .top__paragraph {
     width: 425px;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    color: #1F3F68;
+    padding-bottom: 71px;
+}
+.top__button {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #5A98D0;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    text-decoration: none;
+    padding: 15px 50px;
+    display: inline-block;
 }
 .what-we-do__cards {
     display: flex;
