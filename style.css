@@ -1,6 +1,16 @@
 * {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
+ .container {
+     width: 1140px;
+     margin: 0 auto;
+ } 
+ .menu {
+     display: flex;
+     justify-content: space-between;
+ }
 
 .paragraph {
     font-size: 16px;
@@ -10,6 +20,17 @@
 .top__heading {
     font-size: 64px;
     color: #1f3f68;
+    width: 510px;
+}
+.top__paragraph {
+    width: 425px;
+}
+.what-we-do__cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 359px;
 }
 .heading__contact-us {
     font-weight: 500;
@@ -19,6 +40,10 @@
 .heading {
     font-size: 36px;
     text-align: center;
+}
+.contact__block {
+    display: flex;
+    justify-content: space-between;
 }
 .heading__small {
     font-size: 20px;
@@ -41,4 +66,14 @@
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+}
+.footer__heading {
+    width: 340px;
+}
+.footer__paragraph {
+    width: 495px;
+}
+.footer__list {
+    display: flex;
+    justify-content: space-around;
 }
