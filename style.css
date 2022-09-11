@@ -137,6 +137,78 @@
     margin-top: 27px;
 }
 
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__heading {
+    font-weight: 300;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    font-size: 36px;
+    padding-bottom: 32px;
+}
+
+.project__text {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.project__smart_img {
+    position: relative;
+}
+
+.project__smart_text {
+    font-weight: 400;
+    line-height: 46px;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: right;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.project__app {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.project__app_sparklite {
+    position: relative;
+}
+
+.project__app_sparklite_text {
+    position: absolute;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 28px;
+    top: 32px;
+    left: 32px;
+}
+
+.project__app_car {
+    position: relative;
+}
+
+.project__app_car_text {
+    position: absolute;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 28px;
+    top: 32px;
+    left: 32px;
+}
+
 /*Contact*/
 .heading__contact-us {
     font-weight: 500;
