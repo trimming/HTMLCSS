@@ -19,7 +19,7 @@
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -41,6 +41,7 @@
     background: url(image/illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .paragraph {
@@ -55,7 +56,7 @@
 .top__heading {
     font-size: 64px;
     color: #1f3f68;
-    width: 510px;
+    max-width: 510px;
     font-weight: 300;
     line-height: 74px;
     letter-spacing: 0.04em;
@@ -63,7 +64,7 @@
 }
 
 .top__paragraph {
-    width: 425px;
+    max-width: 425px;
     font-weight: 400;
     line-height: 26px;
     font-size: 16px;
@@ -346,4 +347,43 @@
     color: #FFFFFF;
     opacity: 0.4;
     font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .top__info {
+        background-position: right 260px;
+    }
+}
+
+@media (max-width: 667px) {
+    .top__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 36px;
+        padding-bottom: 41px;
+        background: none;
+    }
+
+    .menu {
+        padding-top: 24px;
+    }
+
+    .top__heading {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+    .top__paragraph {
+        padding-bottom: 32px;
+        text-align: center;
+    }
+
+    .top__button {
+        align-self: center;
+        font-size: 12px;
+        padding: 0 12px;
+    }
 }
