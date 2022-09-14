@@ -151,7 +151,7 @@
 .project {
     display: flex;
     flex-direction: column;
-    padding-bottom: 64px;
+    margin-bottom: 64px;
 }
 
 .project__heading {
@@ -165,11 +165,14 @@
 }
 
 .project__text {
-    text-align: center;
-    padding-bottom: 64px;
+    text-align: center;    
 }
 
-.project__smart_img {
+.project__box {
+    padding-top: 64px;
+}
+
+.project__smart {
     position: relative;
 }
 
@@ -193,9 +196,10 @@
 
 .project__app_sparklite {
     position: relative;
+    margin-right: 32px;
 }
 
-.project__app_sparklite_text {
+.project__app_text {
     position: absolute;
     font-weight: 400;
     line-height: 46px;
@@ -210,15 +214,8 @@
     position: relative;
 }
 
-.project__app_car_text {
-    position: absolute;
-    font-weight: 400;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    font-size: 28px;
-    top: 32px;
-    left: 32px;
+.project__img {
+    width: 100%;
 }
 
 /*Contact*/
@@ -350,6 +347,11 @@
 }
 
 @media (max-width: 1024px) {
+    .container {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
     .top__info {
         background-position: right 260px;
     }
@@ -364,47 +366,80 @@
         margin-bottom: 32px;
         padding: 40px 30px;
     }
-
-    @media (max-width: 667px) {
-        .top__info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 36px;
-            padding-bottom: 41px;
-            background: none;
-        }
-
-        .menu {
-            padding-top: 24px;
-        }
-
-        .top__heading {
-            font-size: 32px;
-            line-height: 38px;
-            text-align: center;
-            padding-bottom: 12px;
-        }
-
-        .top__paragraph {
-            padding-bottom: 32px;
-            text-align: center;
-        }
-
-        .top__button {
-            align-self: center;
-            font-size: 12px;
-            padding: 0 12px;
-        }
-
-        .what-we-do__content {
-            padding-bottom: 32px;
-        }
-
-        .what-we-do__heading {
-            font-size: 24px;
-            line-height: 28px;
-            padding-top: 48px;
-            padding-bottom: 32px;
-        }
+}
+@media (max-width: 667px) {
+    .container {
+        margin-right: 16px;
+        margin-left: 16px;
     }
+    .top__info {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 36px;
+        padding-bottom: 41px;
+        background: none;
+        display: flex;
+    }
+
+    .menu {
+        padding-top: 24px;
+    }
+
+    .top__heading {
+        line-height: 38px;
+        text-align: center;
+        padding-bottom: 12px;
+        font-size: 32px;
+    }
+
+    .top__paragraph {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .top__button {
+        font-size: 12px;
+        padding: 0 12px;
+        align-self: center;
+    }
+
+    .what-we-do__content {
+        padding-bottom: 32px;
+    }
+
+    .what-we-do__heading {
+        line-height: 28px;
+        padding-top: 48px;
+        padding-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .project__box {
+        padding-top: 82px;
+    }
+
+    .project__smart_text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__app {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project__app_sparklite {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .project__app_text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+}    
