@@ -19,7 +19,7 @@
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -41,6 +41,7 @@
     background: url(image/illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .paragraph {
@@ -55,7 +56,7 @@
 .top__heading {
     font-size: 64px;
     color: #1f3f68;
-    width: 510px;
+    max-width: 510px;
     font-weight: 300;
     line-height: 74px;
     letter-spacing: 0.04em;
@@ -63,7 +64,7 @@
 }
 
 .top__paragraph {
-    width: 425px;
+    max-width: 425px;
     font-weight: 400;
     line-height: 26px;
     font-size: 16px;
@@ -106,10 +107,10 @@
 }
 
 .card {
-    height: 480px;
+    max-height: 480px;
     display: flex;
     flex-direction: column;
-    width: 359px;
+    max-width: 359px;
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
@@ -130,12 +131,13 @@
     color: #5A98D0;
 }
 
-.heading__small {
+.heading__mini {
     font-size: 20px;
     line-height: 30px;
     color: #1f3f68;
     font-weight: 400;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .card__heading {
@@ -150,7 +152,7 @@
 .project {
     display: flex;
     flex-direction: column;
-    padding-bottom: 64px;
+    margin-bottom: 64px;
 }
 
 .project__heading {
@@ -165,10 +167,13 @@
 
 .project__text {
     text-align: center;
-    padding-bottom: 64px;
 }
 
-.project__smart_img {
+.project__box {
+    padding-top: 64px;
+}
+
+.project__smart {
     position: relative;
 }
 
@@ -192,9 +197,10 @@
 
 .project__app_sparklite {
     position: relative;
+    margin-right: 32px;
 }
 
-.project__app_sparklite_text {
+.project__app_text {
     position: absolute;
     font-weight: 400;
     line-height: 46px;
@@ -209,34 +215,125 @@
     position: relative;
 }
 
-.project__app_car_text {
-    position: absolute;
-    font-weight: 400;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    font-size: 28px;
-    top: 32px;
-    left: 32px;
+.project__img {
+    width: 100%;
 }
 
 /*Contact*/
-.heading__contact-us {
+.contact-us {
+    padding-top: 54px;
+    padding-bottom: 57px;
+    background: url(image/contactus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 54px;
+    margin-bottom: 57px;
+}
+
+.contact-us__heading {
     font-weight: 500;
     font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
     text-align: center;
+    color: #FFFFFF;
+}
+
+.contact-us__text {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 .contact__block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-bottom: 96px;
 }
 
-.input {
+.contact__block_info {
+    padding-top: 60px;
+    margin-right: 101px;
+}
+
+.address__info {
+    padding-top: 56px;
+
+}
+
+.address__text {
+    max-width: 299px;
+    margin-bottom: 40px;
+}
+
+.info {
+    padding-bottom: 24px;
+}
+
+.phone__list {
+    margin-bottom: 40px;
+    list-style-image: url(image/phone.svg);
+    padding-left: 30px;
+}
+
+.online__list {
+    padding-left: 30px;
+}
+
+.email__info {
+    list-style-image: url(image/letter.svg);
+}
+
+.site__info {
+    list-style-image: url(image/globe.svg);
+}
+
+.form__block {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    box-sizing: border-box;
+    padding: 56px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__block_heading {
+    padding-bottom: 48px;
+}
+
+.form__text {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    color: #1F3F68;
+    padding-bottom: 8px;
+}
+
+.form__input {
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
+    margin-bottom: 32px;
+    width: 428px;
+    height: 72px;
+    padding-left: 42px;
+}
+
+.form__input_text {
+    height: 144px;
+    padding-top: 21px;
 }
 
 .button__form {
@@ -249,6 +346,7 @@
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    padding: 23px 183px;
 }
 
 /*FOOTER*/
@@ -264,7 +362,7 @@
 }
 
 .footer__heading {
-    width: 340px;
+    max-width: 340px;
     font-weight: 400;
     line-height: 46px;
     letter-spacing: 0.05em;
@@ -274,7 +372,7 @@
 }
 
 .footer__paragraph {
-    width: 495px;
+    max-width: 495px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.05em;
@@ -285,7 +383,7 @@
 
 .footer__link {
     font-weight: 400;
-    height: 26px;
+    max-height: 26px;
     display: inline-block;
     line-height: 26px;
     text-align: center;
@@ -315,7 +413,7 @@
 }
 
 .list__item {
-    width: 316px;
+    max-width: 316px;
     margin-right: 32px;
     flex-grow: 1;
     display: flex;
@@ -346,4 +444,259 @@
     color: #FFFFFF;
     opacity: 0.4;
     font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+    .top__info {
+        background-position: right 260px;
+    }
+
+    .what-we-do__content {
+        padding-bottom: 95px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+        padding: 40px 30px;
+    }
+
+    .project {
+        margin-bottom: 109px;
+    }
+
+    .footer__top {
+        padding: 47px 92px 64px;
+    }
+
+    .footer__link {
+        padding: 3px 40px 10px;
+    }
+
+    .footer__paragraph {
+        max-width: 336px;
+    }
+
+    .footer__low {
+        padding-right: 92px;
+        padding-left: 92px;
+    }
+
+    .footer__list {
+        flex-direction: column;
+    }
+
+    .list__item {
+        max-width: 100%;
+    }
+
+    .list__item-1::before {
+        margin-right: 36px;
+    }
+
+    .list__item-2::before {
+        margin-right: 36px;
+    }
+
+    .list__item-3::before {
+        margin-right: 36px;
+    }
+
+    /*Contact*/
+    .contact__menu {
+        padding-top: 18px;
+    }
+
+    .contact-us {
+        margin-top: 49px;
+        margin-bottom: 40px;
+    }
+
+    .contact-us__text {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .contact__block {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 64px;
+    }
+
+    .contact__block_info {
+        margin-bottom: 64px;
+        margin-right: 0;
+    }
+
+    .form__block_heading {
+        max-width: 100px;
+    }
+
+    .form__input {
+        width: 412px;
+        height: 70px;
+    }
+
+    .form__input_text {
+        height: 140px;
+    }
+
+    .button__form {
+        padding: 22px 175px;
+    }
+
+}
+
+@media (max-width: 667px) {
+    .container {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .top__info {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 36px;
+        padding-bottom: 41px;
+        background: none;
+        display: flex;
+    }
+
+    .menu {
+        padding-top: 24px;
+    }
+
+    .top__heading {
+        line-height: 38px;
+        text-align: center;
+        padding-bottom: 12px;
+        font-size: 32px;
+    }
+
+    .top__paragraph {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .top__button {
+        font-size: 12px;
+        padding: 0 12px;
+        align-self: center;
+    }
+
+    .what-we-do__content {
+        padding-bottom: 32px;
+    }
+
+    .what-we-do__heading {
+        line-height: 28px;
+        padding-top: 48px;
+        padding-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .project__box {
+        padding-top: 82px;
+    }
+
+    .project__smart_text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__app {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project__app_sparklite {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .project__app_text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+
+    .footer__top {
+        padding: 18px 0 41px;
+        flex-direction: column;
+    }
+
+    .footer__text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__low {
+        padding: 32px 0;
+    }
+
+    .footer__list {
+        padding-bottom: 37px;
+    }
+
+    .list__item-1::before {
+        margin-right: 23px;
+    }
+
+    .list__item-2::before {
+        margin-right: 23px;
+    }
+
+    .list__item-3::before {
+        margin-right: 23px;
+    }
+
+    /*Contact*/
+    .contact-us {
+        margin-top: 40px;
+    }
+
+    .contact-us__heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .contact-us__text {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    .form__block {
+        padding: 36px;
+    }
+
+    .form__input {
+        width: 271px;
+        height: 46px;
+    }
+
+    .form__block_heading {
+        max-width: 100%;
+    }
+
+    .button__form {
+        padding: 22px 77px;
+    }
+
+    .form__input_text {
+        height: 92px;
+    }
+
+    .map {
+        margin-bottom: 32px;
+    }
 }
